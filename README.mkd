@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technisches Assessment – Data Engineer / ETL</title>
+    <style>
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .title-container h1 {
+            flex: 1;
+            margin-bottom: -50px;
+        }
+        .title-container img {
+            width: 100px; /
+            height: auto;
+            margin-left: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="title-container">
+    <h1>Technisches Assessment – Data Engineer / ETL</h1>
+    <img src="logo/logo.jpg" alt="logo">
+</div>
+
+## Overview 🚆
+
+This repository contains the resources and scripts for the Data Engineer / ETL technical assessment. The project involves data extraction, transformation, and loading (ETL) processes, as well as data validation and analysis tasks.
+
+## Project Structure 📑
+
+- **data/**: Directory containing the input CSV file and output CSV files such as cleaned data, final data for SQL, and data quality validation errors
+- **logo/**: Directory containing images
+- **.gitignore**: File specifying which files and directories to ignore in the repository
+- **database.db**: SQLite database file
+- **main.ipynb**: Main Jupyter Notebook script
+- **requirements.txt**: File listing project dependencies
+
+## Setup Instructions 💻
+
+1. **Clone the Repository**:
+   ```sh
+   cd your-repo
+   git clone https://github.com/yourusername/your-repo.git
+2. **Create a Virtual Environment**:
+   - Ensure Python 3.12 (recommended) is installed.
+   - Create a virtual environment
+        ```sh
+        py -m venv venv
+    - Activate the virtual environment:
+        ```sh
+        venv\Scripts\activate
+3. **Install Dependencies**:
+   ```sh
+   pip install -r requirements.txt
+## To Consider ⚠️
+
+### Assumptions
+
+* It was assumed that the column "Fahrtnummer" is the same as "Zug id"
+
+### Conclusions
+
+* **Zug id**: Instead of deleting rows with missing values in, values were imputed. Three rows still have missing values; however, those are repeated rows. Therefore, only these three rows have been deleted. 
+
+* **Zug id**: Instead of deleting rows with alphabetic characters in the Zug id, the values were corrected. However, three rows still contained alphabetic characters; since those entries are duplicates, they were deleted. 
+
+* **Messung**: Due to not knowing exactly what "Messung" refers to, the rows with missing values were dropped. 
+
+* **Messung**: Negative numbers were converted to positive only if they were surrounded by the same 'Zug id'. The remaining negative values (approximately 5) were deleted. 
+
+* **Average speed**: There are speeds that are practically impossible. It's a topic for discussion due to possible errors in the data. 
+
+* **General**: After data preprocessing and cleaning, to avoid future conflicts, the last 5 rows were deleted as they only differed in the 'Messung' value compared to the other columns (all other values were duplicates, taking Zug id as reference). 
+
+* **General**: The column "Abfahrtsdatum" was not entirely clear to me. What does it really define compared to Abfahrtszeit?
+
+## Information 💡
+<p><b>Name</b>: Sebastian Archila</p>
+<p><b>Email</b>: archila.sebastian@outlook.com</p>
+<p><b>Tel.</b>: 0660 6570726</p>
