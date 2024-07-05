@@ -20,9 +20,9 @@ This repository contains the resources and scripts for the Data Engineer / ETL t
 1. **Clone the Repository**:
    ```sh
    cd your-repo
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/RomeoSe/obb.git
 2. **Create a Virtual Environment**:
-   - Ensure Python 3.12 (recommended) is installed.
+   - Ensure Python 3.12 (recommended) is installed
    - Create a virtual environment
         ```sh
         py -m venv venv
