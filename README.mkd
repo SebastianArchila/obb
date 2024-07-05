@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Technisches Assessment – Data Engineer / ETL</title>
-    <style>
-        .title-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .title-container h1 {
-            flex: 1;
-            margin-bottom: -50px;
-        }
-        .title-container img {
-            width: 100px; /
-            height: auto;
-            margin-left: 20px; 
-        }
-    </style>
-</head>
-<body>
+<img src="logo/logo.jpg" alt="Logo" width="100" height="auto">
 
-<div class="title-container">
-    <h1>Technisches Assessment – Data Engineer / ETL</h1>
-    <img src="logo/logo.jpg" alt="logo">
-</div>
+# Technisches Assessment – Data Engineer / ETL
 
 ## Overview 🚆
 
