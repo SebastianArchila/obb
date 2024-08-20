@@ -57,4 +57,4 @@ This repository contains the resources and scripts for the Data Engineer / ETL t
 ## Information 💡
 <p><b>Name</b>: Sebastian Archila</p>
 <p><b>Email</b>: archila.sebastian@outlook.com</p>
-<p><b>Tel.</b>: 0660 6570726</p>
+<p><b>Tel.</b>: 0660 </p>
